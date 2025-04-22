@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junte-se à nossa comunidade Discord de CodeVerseA.I para explorar, compartilhar e discutir programação e inteligência artificial.">
+    <meta name="keywords" content="discord, comunidade, programação, desenvolvimento, coding, machine learning, inteligência artificial, IA, CodeVerseA.I">
+    <title>CodeVerseA.I - Comunidade Discord</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+</head>
+<body class="bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header id="header" class="fixed w-full bg-opacity-90 bg-gray-900 z-50 transition-colors duration-300 border-b-2 border-indigo-600">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="img/code-icon-neon.png" alt="Logo" class="h-10 mr-3">
+                <h1 class="text-xl font-bold text-indigo-400">CODEVERSEA.I</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-300 hover:text-indigo-400 transition">Início</a>
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">Sobre</a>
+                <a href="#benefits" class="text-gray-300 hover:text-indigo-400 transition">Benefícios</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-indigo-400 transition">Depoimentos</a>
+                <a href="#faq" class="text-gray-300 hover:text-indigo-400 transition">FAQ</a>
+            </nav>
+            <div class="flex items-center">
+                <button id="theme-toggle" class="mr-4 text-gray-400 hover:bg-gray-700 rounded-lg p-2.5">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+                <a href="#" class="pixel-btn hidden md:block">
+                    <i class="fab fa-discord mr-2"></i>ENTRAR
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-gray-400">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900 bg-opacity-95 transition-colors duration-300 border-t border-indigo-600">
+            <div class="container mx-auto px-4 py-3 space-y-2">
+                <a href="#home" class="block text-gray-300 hover:text-indigo-400 transition">Início</a>
+                <a href="#about" class="block text-gray-300 hover:text-indigo-400 transition">Sobre</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-indigo-400 transition">Benefícios</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-indigo-400 transition">Depoimentos</a>
+                <a href="#faq" class="block text-gray-300 hover:text-indigo-400 transition">FAQ</a>
+                <a href="#" class="pixel-btn block py-2 px-4 text-center mt-3">
+                    <i class="fab fa-discord mr-2"></i>ENTRAR
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-20 min-h-screen flex items-center" style="background: linear-gradient(135deg, rgba(12, 11, 24, 0.9), rgba(24, 21, 49, 0.8)), url('img/hero-bg.jpg') no-repeat center center/cover;">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 reveal-left">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-indigo-400">EXPLORE O CÓDIGO</h2>
+                    <div class="energy-bar mb-6"></div>
+                    <p class="text-xl mb-8 text-gray-300">Uma comunidade para desenvolvedores, entusiastas de IA e inovadores tecnológicos. Compartilhe seus projetos, conhecimentos e paixão pela programação e inteligência artificial.</p>
+                    <div class="health-bar"></div>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
+                        <a href="#" class="pixel-btn">
+                            <i class="fab fa-discord mr-2"></i>JUNTAR-SE À COMUNIDADE
+                        </a>
+                        <a href="#about" class="pixel-btn bg-transparent border-3 border-indigo-400 text-indigo-400 hover:bg-indigo-800 hover:bg-opacity-30">
+                            <i class="fas fa-code mr-2"></i>EXPLORAR
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 reveal-right">
+                    <img src="img/code-landscape.jpg" alt="CodeVerseA.I" class="mx-auto max-w-full rounded-lg shadow-2xl border-2 border-indigo-600">
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-pulse hidden md:block">
+                <a href="#about" class="text-indigo-400">
+                    <i class="fas fa-chevron-down text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal-top">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 metroidvania-heading">SOBRE NOSSA COMUNIDADE</h2>
+                <div class="energy-bar"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Uma rede de desenvolvedores unidos pela paixão por código, inovação tecnológica e o avanço da inteligência artificial.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="metroidvania-panel reveal-item">
+                    <div class="benefit-icon mb-6">
+                        <i class="fas fa-code text-2xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center text-indigo-400">Desenvolvedores Ativos</h3>
+                    <p class="text-gray-300 text-center">Uma comunidade dedicada que compartilha código, soluções e melhores práticas para dominar cada aspecto do desenvolvimento de software.</p>
+                </div>
+                
+                <div class="metroidvania-panel reveal-item">
+                    <div class="benefit-icon mb-6">
+                        <i class="fas fa-brain text-2xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center text-indigo-400">Biblioteca de Conhecimento</h3>
+                    <p class="text-gray-300 text-center">Acesso a tutoriais exclusivos, documentação e recursos curados pelos especialistas em programação e inteligência artificial.</p>
+                </div>
+                
+                <div class="metroidvania-panel reveal-item">
+                    <div class="benefit-icon mb-6">
+                        <i class="fas fa-laptop-code text-2xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center text-indigo-400">Arena de Desafios</h3>
+                    <p class="text-gray-300 text-center">Participe de hackathons, desafios de programação e competições para testar suas habilidades contra outros membros da comunidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20" style="background: linear-gradient(to bottom, var(--dark-bg), var(--darker-bg));">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal-top">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 metroidvania-heading">RECURSOS EXCLUSIVOS</h2>
+                <div class="energy-bar"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Amplie seus conhecimentos e desbloqueie novas oportunidades ao se juntar à nossa comunidade.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="benefit-card reveal-item">
+                    <div class="metroidvania-panel h-full">
+                        <div class="benefit-icon mb-6">
+                            <i class="fas fa-bolt text-4xl text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center text-indigo-400">Desenvolvimento Acelerado</h3>
+                        <p class="text-gray-300">Aprenda técnicas avançadas de programação e ferramentas de automação para desenvolver código com velocidade e eficiência.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card reveal-item">
+                    <div class="metroidvania-panel h-full">
+                        <div class="benefit-icon mb-6">
+                            <i class="fas fa-shield-alt text-4xl text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center text-indigo-400">Análise de Padrões de Dados</h3>
+                        <p class="text-gray-300">Domine as técnicas de machine learning e reconhecimento de padrões através de tutoriais detalhados e sessões práticas.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card reveal-item">
+                    <div class="metroidvania-panel h-full">
+                        <div class="benefit-icon mb-6">
+                            <i class="fas fa-crown text-4xl text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center text-indigo-400">Projetos Exclusivos</h3>
+                        <p class="text-gray-300">Participe de projetos exclusivos da comunidade com oportunidades de networking e reconhecimento entre os membros da comunidade.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card reveal-item">
+                    <div class="metroidvania-panel h-full">
+                        <div class="benefit-icon mb-6">
+                            <i class="fas fa-robot text-4xl text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center text-indigo-400">IA & Automação</h3>
+                        <p class="text-gray-300">Aprenda a criar modelos de IA, chatbots e sistemas de automação para resolver problemas complexos e otimizar processos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal-top">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 metroidvania-heading">DEPOIMENTOS DA COMUNIDADE</h2>
+                <div class="energy-bar"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Relatos de desenvolvedores que já cresceram e se desenvolveram em nossa comunidade.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="metroidvania-panel reveal-item">
+                    <img src="img/dev-avatar-1.png" alt="Desenvolvedor 1" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-2 border-indigo-400">
+                    <div class="text-yellow-400 flex justify-center mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-center mb-4 italic">"Graças aos recursos da comunidade, finalmente consegui implementar meu primeiro modelo de machine learning. A comunidade me ajudou a superar todos os obstáculos e entender os conceitos mais complexos."</p>
+                    <h4 class="font-bold text-center text-indigo-400">Ana "CodeMaster" Silva</h4>
+                    <p class="text-gray-400 text-center text-sm">Desenvolvedora Full-Stack - Especialista em Python</p>
+                </div>
+                
+                <div class="metroidvania-panel reveal-item">
+                    <img src="img/dev-avatar-2.png" alt="Desenvolvedor 2" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-2 border-indigo-400">
+                    <div class="text-yellow-400 flex justify-center mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-300 text-center mb-4 italic">"Os workshops semanais e desafios de código mantêm o aprendizado sempre constante. Já participei de 30 eventos e aprendi uma nova técnica em cada um deles. Incrível!"</p>
+                    <h4 class="font-bold text-center text-indigo-400">Carlos "DataWizard" Oliveira</h4>
+                    <p class="text-gray-400 text-center text-sm">Engenheiro de Dados - Especialista em Java/Scala</p>
+                </div>
+                
+                <div class="metroidvania-panel reveal-item">
+                    <img src="img/dev-avatar-3.png" alt="Desenvolvedor 3" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-2 border-indigo-400">
+                    <div class="text-yellow-400 flex justify-center mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-300 text-center mb-4 italic">"Sempre quis começar a programar mas me sentia intimidada. Graças aos tutoriais para iniciantes e à boa vontade da comunidade, agora posso dizer com orgulho que desenvolvi minha primeira aplicação com inteligência artificial!"</p>
+                    <h4 class="font-bold text-center text-indigo-400">Juliana "CodeSymphony" Costa</h4>
+                    <p class="text-gray-400 text-center text-sm">Desenvolvedora Web - Especialista em JavaScript/React</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20" style="background: linear-gradient(to bottom, var(--dark-bg), var(--darker-bg));">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal-top">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 metroidvania-heading">PERGUNTAS FREQUENTES</h2>
+                <div class="energy-bar"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Respostas para as dúvidas mais comuns dos novos membros da comunidade.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="faq-item mb-6 reveal-item">
+                    <button class="faq-question w-full rounded-lg p-4 shadow-md hover:shadow-lg transition flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-300">Preciso ser expert em programação para participar?</span>
+                        <i class="fas fa-chevron-down text-indigo-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer rounded-b-lg px-4 pb-4 hidden">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300">Não! Todos os níveis de experiência são bem-vindos em nossa comunidade. Desde desenvolvedores experientes até aqueles que estão iniciando sua jornada na programação e inteligência artificial, nossa comunidade está aqui para ajudar em cada etapa do aprendizado.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item mb-6 reveal-item">
+                    <button class="faq-question w-full rounded-lg p-4 shadow-md hover:shadow-lg transition flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-300">Quais linguagens de programação e tecnologias são discutidas na comunidade?</span>
+                        <i class="fas fa-chevron-down text-indigo-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer rounded-b-lg px-4 pb-4 hidden">
+                        <p class="text-gray-300 mt-2">Nossa comunidade abrange todas as linguagens de programação e tecnologias, desde as mais populares como Python, JavaScript e Java, até linguagens mais especializadas. No campo da IA, discutimos desde ferramentas básicas até frameworks avançados como TensorFlow, PyTorch, OpenAI e muitos outros. Temos canais específicos para cada tecnologia principal!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item mb-6 reveal-item">
+                    <button class="faq-question w-full rounded-lg p-4 shadow-md hover:shadow-lg transition flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-300">Como funcionam os eventos e hackathons da comunidade?</span>
+                        <i class="fas fa-chevron-down text-indigo-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer rounded-b-lg px-4 pb-4 hidden">
+                        <p class="text-gray-300 mt-2">Organizamos eventos regulares como hackathons, workshops de programação, sessões de pair programming, desafios de IA e encontros virtuais. Nossos eventos são projetados para todos os níveis de habilidade e incluem premiações como roles especiais no Discord, certificados de participação e até mesmo oportunidades de networking com empresas parceiras.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item mb-6 reveal-item">
+                    <button class="faq-question w-full rounded-lg p-4 shadow-md hover:shadow-lg transition flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-300">Vocês ajudam com problemas complexos de código?</span>
+                        <i class="fas fa-chevron-down text-indigo-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer rounded-b-lg px-4 pb-4 hidden">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300">Com certeza! Temos canais específicos para diferentes linguagens e tecnologias onde compartilhamos soluções para os problemas mais complexos. Também organizamos sessões ao vivo de pair programming e code reviews para ajudar membros com desafios técnicos específicos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal-item">
+                    <button class="faq-question w-full rounded-lg p-4 shadow-md hover:shadow-lg transition flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-300">Posso compartilhar meus projetos e obter feedback?</span>
+                        <i class="fas fa-chevron-down text-indigo-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer rounded-b-lg px-4 pb-4 hidden">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300">Absolutamente! Temos canais dedicados a projetos onde você pode compartilhar seu código, receber feedback de especialistas e encontrar colaboradores. Muitas startups e projetos de código aberto incríveis nasceram na nossa comunidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-12 transition-colors duration-300 border-t-2 border-indigo-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-6">
+                        <img src="img/code-icon-neon.png" alt="Logo" class="h-10 mr-3">
+                        <h3 class="text-xl font-bold text-indigo-400">CODEVERSEA.I</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Uma comunidade de desenvolvedores explorando as fronteiras da programação e inteligência artificial.</p>
+                </div>
+                
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-semibold mb-4 text-white">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-indigo-400 transition">Início</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-indigo-400 transition">Sobre</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-indigo-400 transition">Recursos</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-indigo-400 transition">Depoimentos</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-indigo-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-semibold mb-4 text-white">Tecnologias</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition">Python/Django</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition">JavaScript/React</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition">TensorFlow/PyTorch</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition">GPT/LLMs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-semibold mb-4 text-white">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            contato@codeversea.i
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-globe mr-2"></i>
+                            www.codeversea.i
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="#" class="pixel-btn inline-block">
+                            <i class="fab fa-discord mr-2"></i>JUNTAR-SE
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="energy-bar my-8"></div>
+            
+            <div class="border-t border-indigo-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2023 CodeVerseA.I. Todos os direitos reservados.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 text-sm transition">Política de Privacidade</a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 text-sm transition">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
